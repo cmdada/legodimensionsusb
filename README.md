@@ -1,4 +1,4 @@
-# Lego USB Color Cycling
+# Lego USB smooth color cycling
 
 ## Overview
 This Python script allows you to smoothly cycle colors on a Lego USB Pad. It uses USB communication to control the colors displayed on the pad.
