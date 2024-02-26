@@ -1,6 +1,4 @@
-#!/usr/bin/python2
-
-import usb.core
+import usb.core as core
 import usb.util
 from time import sleep
 
@@ -13,15 +11,15 @@ ALL_PADS = 0
 def init_usb():
     global dev
 
-    dev = usb.core.find(idVendor=0x0e6f, idProduct=0x0241)
+    dev = core.find(idVendor=0x0e6f, idProduct=0x0241)
 
     if dev is None:
-        print 'Device not found'
+        print('Device not found')
     else:
         if dev.is_kernel_driver_active(0):
             dev.detach_kernel_driver(0)
 
-        print usb.util.get_string(dev, dev.iProduct)
+        print(usb.util.get_string(dev, dev.iProduct))
 
         dev.set_configuration()
         dev.write(1, TOYPAD_INIT)
