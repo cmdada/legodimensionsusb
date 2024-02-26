@@ -4,11 +4,7 @@
 This Python script allows you to smoothly cycle colors on a Lego USB Pad. It uses USB communication to control the colors displayed on the pad.
 
 ## Prerequisites
-- Python2 and pip2:
-	```
-	$ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
-	$ sudo python2 get-pip.py
-	```
+- Python3 and pip3
 
 - Lego USB Pad (only tested with a wii u one)
 
@@ -16,7 +12,7 @@ This Python script allows you to smoothly cycle colors on a Lego USB Pad. It use
 1. Connect your Lego USB Pad to your computer.
 2. Install the required Python library:
    ```bash
-   pip2 install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 3. Adjust the USB device information in the script if necessary (idVendor, idProduct).
 
@@ -24,7 +20,7 @@ This Python script allows you to smoothly cycle colors on a Lego USB Pad. It use
 Run the script to smoothly cycle colors on the Lego USB Pad. The colors transition between the specified start and end colors repeatedly.
 
 ```bash
-python2 pulse.py
+sudo python3 pulse.py
 ```
 
 ## Configuration
